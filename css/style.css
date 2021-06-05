@@ -1,0 +1,110 @@
+:root {
+    --focus: #7943A4;
+    --hover: #C283F3;
+    --active: #7943A4;
+    --violet: #9D5CD0;
+    --text: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'OpenSans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 3px;
+}
+
+.text_hidden {
+    visibility: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-full {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title-h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.descr {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+
+/* btns */
+
+.btn-header:focus {
+    outline: 2px solid var(--focus);
+}
+
+.btn {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 23px 35px;
+    border: 3px solid var(--violet);
+    border-radius: 50px;
+    background-color: transparent;
+    transition: background-color .2s ease-in-out, border .2s ease-in-out;
+}
+
+.btn:focus {
+    border: 3px solid var(--hover);
+    background-color: var(--focus);
+}

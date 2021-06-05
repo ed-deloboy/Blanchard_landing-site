@@ -1,0 +1,7 @@
+.about {
+    padding: 79px 0;
+}
+
+.about__descr {
+    max-width: calc(65% + 60px);
+}

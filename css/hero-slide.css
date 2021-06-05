@@ -1,0 +1,9 @@
+.swiper-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-slide {
+    background: rgb(197, 197, 197);
+    height: 300px;
+}
