@@ -23,7 +23,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-dropdown-select.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="css/header-sub-content.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/hero-slide.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -74,12 +77,111 @@
             <div class="container">
                 <div class="header__bottom-wrapper">
                     <ul class="header__bottom-list">
-                        <li class="header__bottom-item">Реализм</li>
-                        <li class="header__bottom-item">Реализм</li>
+                        <li class="header__bottom-item">
+                            <button class="header__bottom-drop-btn">Реализм</button>
+                            <div class="header__sub-wrap-content">
+                                <ul class="header__sub-content" data-simplebar aria-label="Условия договора">
+                                    <li class="header__sub-item tintorento"><a class="header__sub-link" href="#">Тинторетто</a></li>
+                                    <li class="header__sub-item fridrich"><a class="header__sub-link" href="#">Фридрих</a></li>
+                                    <li class="header__sub-item leonardo"><a class="header__sub-link" href="#">Леонардо</a></li>
+                                    <li class="header__sub-item verrokko"><a class="header__sub-link" href="#">Верроккьо</a></li>
+                                    <li class="header__sub-item tintorento"><a class="header__sub-link" href="#">Тинторетто</a></li>
+                                    <li class="header__sub-item fridrich"><a class="header__sub-link" href="#">Фридрих</a></li>
+                                    <li class="header__sub-item leonardo"><a class="header__sub-link" href="#">Леонардо</a></li>
+                                    <li class="header__sub-item verrokko"><a class="header__sub-link" href="#">Верроккьо</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__bottom-item">
+                            <button class="header__bottom-drop-btn">Импрессионизм</button>
+                            <div class="header__sub-wrap-content">
+                                <ul class="header__sub-content" data-simplebar aria-label="Условия договора">
+                                    <li class="header__sub-item mone">
+                                        <a class="header__sub-link" href="#">Моне</a></li>
+                                    <li class="header__sub-item sisley">
+                                        <a class="header__sub-link" href="#">Сислей</a></li>
+                                    <li class="header__sub-item mane">
+                                        <a class="header__sub-link" href="#">Мане</a></li>
+                                    <li class="header__sub-item renuar">
+                                        <a class="header__sub-link" href="#">Ренуар</a></li>
+                                    <li class="header__sub-item mone">
+                                        <a class="header__sub-link" href="#">Моне</a></li>
+                                    <li class="header__sub-item sisley">
+                                        <a class="header__sub-link" href="#">Сислей</a></li>
+                                    <li class="header__sub-item mane">
+                                        <a class="header__sub-link" href="#">Мане</a></li>
+                                    <li class="header__sub-item renuar">
+                                        <a class="header__sub-link" href="#">Ренуар</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__bottom-item">
+                            <button class="header__bottom-drop-btn">Постимпрессионизм</button>
+                            <div class="header__sub-wrap-content">
+                                <ul class="header__sub-content" data-simplebar aria-label="Условия договора">
+                                    <li class="header__sub-item vangog">
+                                        <a class="header__sub-link" href="#">Ван Гог</a></li>
+                                    <li class="header__sub-item sezann">
+                                        <a class="header__sub-link" href="#">Сезанн</a></li>
+                                    <li class="header__sub-item gogen">
+                                        <a class="header__sub-link" href="#">Гоген</a></li>
+                                    <li class="header__sub-item syora">
+                                        <a class="header__sub-link" href="#">Сёра</a></li>
+                                    <li class="header__sub-item vangog">
+                                        <a class="header__sub-link" href="#">Ван Гог</a></li>
+                                    <li class="header__sub-item sezann">
+                                        <a class="header__sub-link" href="#">Сезанн</a></li>
+                                    <li class="header__sub-item gogen">
+                                        <a class="header__sub-link" href="#">Гоген</a></li>
+                                    <li class="header__sub-item syora">
+                                        <a class="header__sub-link" href="#">Сёра</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__bottom-item">
+                            <button class="header__bottom-drop-btn">Авангард</button>
+                            <div class="header__sub-wrap-content">
+                                <ul class="header__sub-content" data-simplebar aria-label="Условия договора">
+                                    <li class="header__sub-item kandinsky">
+                                        <a class="header__sub-link" href="#">Кандинский</a></li>
+                                    <li class="header__sub-item marinetti">
+                                        <a class="header__sub-link" href="#">Маринетти</a></li>
+                                    <li class="header__sub-item malevich">
+                                        <a class="header__sub-link" href="#">Малевич</a></li>
+                                    <li class="header__sub-item picasso">
+                                        <a class="header__sub-link" href="#">Пикассо</a></li>
+                                    <li class="header__sub-item kandinsky">
+                                        <a class="header__sub-link" href="#">Кандинский</a></li>
+                                    <li class="header__sub-item marinetti">
+                                        <a class="header__sub-link" href="#">Маринетти</a></li>
+                                    <li class="header__sub-item malevich">
+                                        <a class="header__sub-link" href="#">Малевич</a></li>
+                                    <li class="header__sub-item picasso">
+                                        <a class="header__sub-link" href="#">Пикассо</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__bottom-item">
+                            <button class="header__bottom-drop-btn">Футуризм</button>
+                            <div class="header__sub-wrap-content">
+                                <ul class="header__sub-content" data-simplebar aria-label="Условия договора">
+                                    <li class="header__sub-item karra">
+                                        <a class="header__sub-link" href="#">Карра</a></li>
+                                    <li class="header__sub-item pratella">
+                                        <a class="header__sub-link" href="#">Прателла</a></li>
+                                    <li class="header__sub-item severini">
+                                        <a class="header__sub-link" href="#">Северини</a></li>
+                                    <li class="header__sub-item balla">
+                                        <a class="header__sub-link" href="#">Балла</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
                     </ul>
                     <form class="header__bottom-form">
                         <label for="headBottomSearch" class="header__bottom-search-icon"></label>
-                        <input aria-label="Поле для поиска по сайту" id="headBottomSearch" class="header__bottom-search" type="text" placeholder="Поиск по сайту">
+                        <input aria-label="Поле для поиска по сайту" id="headBottomSearch" class="header__bottom-search" type="text" autocomplete="off" placeholder="Поиск по сайту">
                     </form>
                 </div>
             </div>
@@ -133,6 +235,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/slide.js"></script>
     <script src="js/header.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
     <script src="js/map.js"></script>
