@@ -27,10 +27,13 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="css/header-sub-content.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/hero-slide.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/about.css">
+    <!-- filter select -->
+    <link rel="stylesheet" href="css/filter.min.css">
+    <!-- filter slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/gallary.css">
 
 
 </head>
@@ -188,6 +191,7 @@
         </div>
     </header>
     <main class="main">
+        <!-- hero -->
         <section class="hero">
             <h1 class="text_hidden">Blanchard. Интернет-магазин художественной галереи</h1>
             <div class="container">
@@ -196,49 +200,93 @@
                 <button class="btn hero__btn">Подписаться на рассылку</button>
             </div>
         </section>
+        <!-- about -->
         <section class="about">
             <div class="container">
-                <h2 class="title-h2">О нас</h2>
+                <h2 class="title-h2 about__title">О нас</h2>
                 <p class="descr about__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако,
                     забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения
                     в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
                     определенных слоев населения, а значит, должны быть разоблачены.</p>
             </div>
         </section>
+        <!-- gallary -->
+        <section class="gallary">
+            <div class="container">
+                <h2 class="gallary__title title-h2">Галерея</h2>
+                <div class="gallery__content-container">
+                    <div class="gallary__left-wrapper">
+                        <div class="gallary__filter-container">
+                            <h3 class="gallary__title-filter">Фильтр:</h3>
+                            <select name="select" id="filterSelect">
+                                <option value="">Живопись</option>
+                                <option value="">Рисунок</option>
+                                <option value="">Скульптура</option>
+                              </select>
+                        </div>
+                        <p class="gallary__filter-descr">
+                            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="gallary__filter-link">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+                        </p>
+                    </div>
+                    <div class="gallary__slider">
+                        <!-- slider -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide gallary-slide">Slide 1</div>
+                                <div class="swiper-slide gallary-slide">Slide 2</div>
+                                <div class="swiper-slide gallary-slide">Slide 3</div>
+                                <div class="swiper-slide gallary-slide">Slide 4</div>
+                                <div class="swiper-slide gallary-slide">Slide 5</div>
+                                <div class="swiper-slide gallary-slide">Slide 6</div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
 
         <!-- slider -->
         <!-- <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide hero-slide">Slide 1</div>
-                <div class="swiper-slide hero-slide">Slide 2</div>
-                <div class="swiper-slide hero-slide">Slide 3</div>
-                <div class="swiper-slide hero-slide">Slide 4</div>
-                <div class="swiper-slide hero-slide">Slide 5</div>
-                <div class="swiper-slide hero-slide">Slide 6</div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-scrollbar"></div>
-        </div> -->
+<div class="swiper-wrapper">
+    <div class="swiper-slide hero-slide">Slide 1</div>
+    <div class="swiper-slide hero-slide">Slide 2</div>
+    <div class="swiper-slide hero-slide">Slide 3</div>
+    <div class="swiper-slide hero-slide">Slide 4</div>
+    <div class="swiper-slide hero-slide">Slide 5</div>
+    <div class="swiper-slide hero-slide">Slide 6</div>
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-scrollbar"></div>
+</div> -->
         <!-- map -->
         <!-- <section class="section">
-            <div class="container">
-                <div id="map" style="width: 600px; height: 400px"></div>
-            </div>
-        </section> -->
+<div class="container">
+    <div id="map" style="width: 600px; height: 400px"></div>
+</div>
+</section> -->
     </main>
     <footer>
 
     </footer>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/slide.js"></script>
     <script src="js/header.js"></script>
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
     <script src="js/map.js"></script>
+    <!-- filter select -->
+    <script src="js/filter-select.min.js"></script>
+    <script src="js/filter-select.js"></script>
+    <!-- filter slide-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slide.js"></script>
 
 </body>
 

@@ -62,9 +62,9 @@ button {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1660px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 29px;
 }
 
 .container-full {
@@ -83,7 +83,7 @@ button {
     color: var(--text);
     font-size: 16px;
     font-weight: 400;
-    line-height: 31px;
+    line-height: 32px;
 }
 
 
@@ -97,7 +97,7 @@ button {
     color: white;
     font-size: 18px;
     font-weight: 600;
-    padding: 23px 35px;
+    padding: 23px 37px;
     border: 3px solid var(--violet);
     border-radius: 50px;
     background-color: transparent;

@@ -1,0 +1,137 @@
+.choices {
+    width: 200px;
+}
+
+.choices__inner {
+    min-height: 37px;
+    padding: 5px 12px 7px 11px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.is-open .choices__inner {
+    position: relative;
+    border-color: #CCB26E;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+    padding-bottom: 9px;
+}
+
+.choices__list--dropdown .choices__item--selectable {
+    padding-right: 10px;
+}
+
+.choices__list {
+    padding-top: 10px;
+}
+
+.choices__placeholder {
+    opacity: 1;
+}
+
+.choices__list--single {
+    display: inline-block;
+    padding: 3px 16px 4px 4px;
+    width: 100%;
+}
+
+.is-open .choices__list--dropdown {
+    border-top: 0px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-color: #CCB26E;
+}
+
+.choices[data-type*=select-one]:after {
+    height: 6px;
+    width: 6px;
+    border-color: transparent transparent #666666 #666666;
+    border-width: 1px;
+    margin-top: -8.5px;
+    transform: rotate(-45deg);
+    z-index: 1;
+    transition: border-color 0.2s ease-in-out, margin-top 0.2s ease-in-out;
+}
+
+.choices[data-type*=select-one].is-open:after {
+    margin-top: -3.5px;
+    border-color: #CCB26E #CCB26E transparent transparent;
+}
+
+.common-border {
+    border: 1px solid #CCB26E;
+}
+
+#choices--selectCustom-item-choice-1 {
+    display: none;
+}
+
+.choices__list--dropdown .choices__item {
+    padding: 15px;
+}
+
+.choices__list--dropdown {
+    margin-top: -7px;
+    z-index: 0;
+}
+
+
+/* section gallary */
+
+.gallary {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-image: url(../img/gallary/background-birmingham-museums-trust.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallary__title {
+    color: white;
+    margin-bottom: 42px;
+}
+
+.gallery__content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallary__left-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 24%;
+}
+
+.gallary__filter-descr {
+    color: white;
+}
+
+.gallary__filter-link {
+    color: var(--violet);
+    transition: color .2s ease-in-out;
+}
+
+.gallary__filter-link:hover {
+    color: var(--hover);
+}
+
+
+/* slide */
+
+.swiper-container {
+    width: 100%;
+    height: 700px;
+}
+
+.gallary-slide {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}

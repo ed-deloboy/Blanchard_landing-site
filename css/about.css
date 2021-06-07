@@ -1,7 +1,13 @@
 .about {
-    padding: 79px 0;
+    padding-top: 87px;
+    padding-bottom: 80px;
+}
+
+.about__title {
+    margin-bottom: 23px;
 }
 
 .about__descr {
-    max-width: calc(65% + 60px);
+    max-width: calc(65% + 40px);
+    margin-bottom: 23px;
 }

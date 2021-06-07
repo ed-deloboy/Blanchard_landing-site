@@ -1,23 +1,55 @@
 const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
     slidesPerView: 3,
     spaceBetween: 10,
+    slidesPerColumn: 2,
     direction: 'horizontal',
     loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
+    autoplay: {
+        delay: 3000,
     },
 
-    // Navigation arrows
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-    // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+
+    breakpoints: {
+        320: {
+            spaceBetween: 20,
+
+        },
+
+        1025: {
+            pagination: false,
+        },
+
+    },
 });
+
+
+
+// const swiper = new Swiper('.swiper-container', {
+//     direction: 'vertical',
+//     loop: true,
+
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
+
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+
+//     scrollbar: {
+//         el: '.swiper-scrollbar',
+//     },
+// });
