@@ -1,11 +1,19 @@
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 50,
     slidesPerColumn: 2,
     direction: 'horizontal',
-    loop: true,
+    setWrapperSize: true,
     autoplay: {
-        delay: 3000,
+        delay: 7000,
+    },
+    // preload images
+    preloadImages: false,
+    lazy: {
+        // если true то загрузка начнется во время переключения слайдов
+        loadPrevNext: true,
+        // подгрузка в преды и в след слайдах
+        loadOnTransitionStart: false,
     },
 
     pagination: {
@@ -17,9 +25,6 @@ const swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
 
     breakpoints: {
         320: {
@@ -27,9 +32,7 @@ const swiper = new Swiper('.swiper-container', {
 
         },
 
-        1025: {
-            pagination: false,
-        },
+        1025: {},
 
     },
 });

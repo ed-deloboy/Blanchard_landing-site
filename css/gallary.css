@@ -1,5 +1,5 @@
 .choices {
-    width: 200px;
+    width: 400px;
 }
 
 .choices__inner {
@@ -8,13 +8,12 @@
     color: white;
     background-color: transparent;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .is-open .choices__inner {
     position: relative;
-    border-color: #CCB26E;
-    border-radius: 10px;
+    border-radius: 6px;
     z-index: 1;
 }
 
@@ -27,7 +26,7 @@
 }
 
 .choices__list {
-    padding-top: 10px;
+    color: white;
 }
 
 .choices__placeholder {
@@ -36,16 +35,12 @@
 
 .choices__list--single {
     display: inline-block;
-    padding: 3px 16px 4px 4px;
+    padding: 5px 0px 3px 4px;
     width: 100%;
 }
 
 .is-open .choices__list--dropdown {
-    border-top: 0px;
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-color: #CCB26E;
+    border-radius: 6px;
 }
 
 .choices[data-type*=select-one]:after {
@@ -53,7 +48,8 @@
     width: 6px;
     border-color: transparent transparent #666666 #666666;
     border-width: 1px;
-    margin-top: -8.5px;
+    margin-top: -4px;
+    margin-right: 4px;
     transform: rotate(-45deg);
     z-index: 1;
     transition: border-color 0.2s ease-in-out, margin-top 0.2s ease-in-out;
@@ -61,7 +57,7 @@
 
 .choices[data-type*=select-one].is-open:after {
     margin-top: -3.5px;
-    border-color: #CCB26E #CCB26E transparent transparent;
+    border-color: #ffffff #ffffff transparent transparent;
 }
 
 .common-border {
@@ -77,8 +73,7 @@
 }
 
 .choices__list--dropdown {
-    margin-top: -7px;
-    z-index: 0;
+    margin-top: -1px;
 }
 
 
@@ -86,7 +81,7 @@
 
 .gallary {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     background-image: url(../img/gallary/background-birmingham-museums-trust.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,6 +94,7 @@
 
 .gallery__content-container {
     display: flex;
+    flex: 1 1 auto;
     justify-content: space-between;
 }
 
@@ -106,7 +102,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 24%;
+    max-width: 440px;
 }
 
 .gallary__filter-descr {
@@ -122,16 +118,50 @@
     color: var(--hover);
 }
 
+.gallary__slider {
+    position: relative;
+    padding: 0 0 0 10px;
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-top: 80px;
+}
+
 
 /* slide */
 
 .swiper-container {
-    width: 100%;
-    height: 700px;
+    width: 1150px;
+    height: 900px;
 }
 
 .gallary-slide {
-    background-color: red;
+    ;
     width: 300px;
-    height: 300px;
+    height: 350px;
+}
+
+.gallary__slide-img {
+    width: 100%;
+}
+
+.choices__list--dropdown {
+    background-color: transparent;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: transparent;
+}
+
+
+/* next and prev */
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: -42px;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.swiper-pagination {
+    top: -40px;
 }
