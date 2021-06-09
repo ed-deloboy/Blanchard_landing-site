@@ -4,6 +4,7 @@
     --active: #7943A4;
     --violet: #9D5CD0;
     --text: #333333;
+    --gray: #666666;
 }
 
 * {
@@ -16,6 +17,7 @@
 
 html {
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {

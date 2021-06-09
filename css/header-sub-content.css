@@ -14,12 +14,16 @@
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: center right;
-    transition: background-image .2s ease-in-out, color .2s ease-in-out;
+    transition: background-image .1s ease-in-out, color .1s ease-in-out;
 }
 
 .header__bottom-drop-btn:hover {
     color: var(--violet);
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 6L1 1' stroke='%239D5CD0'/%3E%3C/svg%3E%0A");
+}
+
+.header__bottom-drop-btn:focus {
+    outline: 2px solid var(--focus);
 }
 
 .header__bottom-drop-btn:hover+.header__sub-wrap-content {
