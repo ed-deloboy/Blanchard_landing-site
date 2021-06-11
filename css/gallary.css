@@ -2,10 +2,12 @@
     width: 400px;
 }
 
+
+/* 
 .choices,
 .is-focused {
     background-color: #ffffff40;
-}
+} */
 
 .choices__inner {
     min-height: 37px;
@@ -17,9 +19,15 @@
 }
 
 .is-open .choices__inner {
+    background-color: rgba(255, 255, 255, 0.2);
     position: relative;
     border-radius: 6px;
     z-index: 1;
+}
+
+.choices[data-type*=select-one]:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: 2px red;
 }
 
 .choices[data-type*=select-one] .choices__inner {
