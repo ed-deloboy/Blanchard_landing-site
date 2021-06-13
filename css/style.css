@@ -1,10 +1,16 @@
 :root {
+    --white: #fff;
     --focus: #7943A4;
     --hover: #C283F3;
     --active: #7943A4;
     --violet: #9D5CD0;
     --text: #333333;
     --gray: #666666;
+    --light-gray: #999999;
+    --border: #CACACA;
+    --acc-gray: #ECECEC;
+    --acc-back: #D1A9F0;
+    --small-descr: #999999;
 }
 
 * {
@@ -17,6 +23,8 @@
 
 html {
     font-size: 16px;
+    color: var(--text);
+    font-weight: 400;
     overflow-x: hidden;
 }
 
@@ -81,6 +89,13 @@ button {
     color: var(--text);
 }
 
+.title-h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
 .descr {
     color: var(--text);
     font-size: 16px;
@@ -109,4 +124,27 @@ button {
 .btn:focus {
     border: 3px solid var(--hover);
     background-color: var(--focus);
+}
+
+
+/* link */
+
+.flex {
+    display: flex;
+}
+
+.violet-link {
+    display: inline-block;
+    font-size: 16px;
+    color: var(--violet);
+    transition: color .3s ease-in-out;
+}
+
+.violet-link:hover {
+    color: var(--hover);
+}
+
+.small--descr {
+    color: var(--small-descr);
+    font-size: 12px;
 }

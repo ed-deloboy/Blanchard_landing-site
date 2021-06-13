@@ -102,14 +102,11 @@
     background-position-y: bottom;
 }
 
-.gallary__title-filter {
-    color: white;
-    margin-bottom: 10px;
-}
 
+/* 
 .gallary__option-filter:hover {
     background-color: rgba(255, 255, 255, 0.337);
-}
+} */
 
 .header__bottom-search {
     color: white;

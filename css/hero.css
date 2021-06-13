@@ -1,9 +1,9 @@
 .hero {
     background-image: url(../img/hero/hero-slide1.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding-top: 240px;
-    padding-bottom: 120px;
+    padding-bottom: 126px;
 }
 
 .hero__title {

@@ -14,7 +14,7 @@
     padding: 5px 12px 7px 11px;
     color: white;
     background-color: transparent;
-    border: 1px solid #ddd;
+    border: 1px solid var(--white);
     border-radius: 6px;
 }
 
@@ -27,7 +27,6 @@
 
 .choices[data-type*=select-one]:focus {
     background-color: rgba(255, 255, 255, 0.2);
-    outline: 2px red;
 }
 
 .choices[data-type*=select-one] .choices__inner {
@@ -39,7 +38,7 @@
 }
 
 .choices__list {
-    color: white;
+    color: var(--white);
 }
 
 .choices__placeholder {
@@ -54,12 +53,13 @@
 
 .is-open .choices__list--dropdown {
     border-radius: 6px;
+    border: 1px solid var(--light-gray);
 }
 
 .choices[data-type*=select-one]:after {
     height: 6px;
     width: 6px;
-    border-color: transparent transparent #666666 #666666;
+    border-color: transparent transparent var(--gray) var(--gray);
     border-width: 1px;
     margin-top: -4px;
     margin-right: 4px;
@@ -70,7 +70,7 @@
 
 .choices[data-type*=select-one].is-open:after {
     margin-top: -3.5px;
-    border-color: #ffffff #ffffff transparent transparent;
+    border-color: var(--white) var(--white) transparent transparent;
 }
 
 .common-border {
@@ -82,7 +82,10 @@
 }
 
 .choices__list--dropdown .choices__item {
-    padding: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .choices__list--dropdown {
@@ -93,16 +96,16 @@
 /* section gallary */
 
 .gallary {
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 84px;
+    padding-bottom: 65px;
     background-image: url(../img/gallary/background-birmingham-museums-trust.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .gallary__title {
-    color: white;
-    margin-bottom: 42px;
+    color: var(--white);
+    margin-bottom: 28px;
 }
 
 .gallery__content-container {
@@ -115,20 +118,35 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 440px;
+    max-width: 439px;
+}
+
+.gallary__title-filter {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
 .gallary__filter-descr {
-    color: white;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 33px;
+    padding-right: 90px;
 }
 
 .gallary__filter-link {
-    color: var(--violet);
     transition: color .2s ease-in-out;
 }
 
 .gallary__filter-link:hover {
     color: var(--hover);
+}
+
+.gallary__filter-link:focus {
+    color: var(--hover);
+    outline: 2px solid var(--focus);
 }
 
 .gallary__slider {
@@ -144,11 +162,10 @@
 
 .swiper-container {
     width: 1150px;
-    height: 900px;
+    height: 765px;
 }
 
 .gallary-slide {
-    width: 300px;
     height: 350px;
 }
 
@@ -160,7 +177,24 @@
     background-color: transparent;
 }
 
+.choices__item--choice:not(:last-child) {
+    border-bottom: 1px solid var(--light-gray);
+}
+
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: transparent;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted:hover {
+    background-color: rgba(255, 255, 255, 0.275);
+}
+
+.is-highlighted {
+    background-color: transparent;
+}
+
+.is-selected {
+    color: var(--light-gray);
     background-color: transparent;
 }
 
@@ -176,6 +210,7 @@
 .swiper-button-prev {
     width: 30px;
     height: 30px;
+    left: 4px;
     top: -38px;
     background-color: var(--gray);
     border-radius: 50px;
@@ -184,7 +219,7 @@
 }
 
 .swiper-button-next {
-    left: 113px;
+    left: 104px;
 }
 
 .swiper-button-next:hover,
@@ -210,8 +245,8 @@
     height: 6px;
     left: 11px;
     transform: rotate(45deg);
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
+    border-left: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
 }
 
 .swiper-button-next:after,
@@ -222,8 +257,8 @@
     height: 6px;
     transform: rotate(-135deg);
     right: 11px;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
+    border-left: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
 }
 
 
@@ -234,9 +269,9 @@
 }
 
 .swiper-pagination-fraction {
-    color: white;
+    color: var(--white);
     font-size: 16px;
-    left: 56px;
+    left: 52px;
     top: -52px;
 }
 
