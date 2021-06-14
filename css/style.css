@@ -126,6 +126,36 @@ button {
     background-color: var(--focus);
 }
 
+.btn-primery {
+    position: relative;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 800;
+    display: block;
+    align-self: center;
+    padding: 18px 34px;
+    background-color: transparent;
+    border: 2px solid var(--violet);
+    border-radius: 100px;
+    transition: color .2s ease-in-out, border .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.btn-primery::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    border: 2px solid var(--violet);
+    border-radius: 100px;
+    transition: color .2s ease-in-out, border .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.color-violet {
+    color: var(--violet);
+}
+
 
 /* link */
 

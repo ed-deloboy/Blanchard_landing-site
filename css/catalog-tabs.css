@@ -1,6 +1,6 @@
 .catalog-tabs {
     padding-top: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 42px;
 }
 
 .catalog-tabs__header-content {
@@ -331,7 +331,7 @@
 /* переопределяем стили которые задаёт jqueryUI */
 
 .ui-accordion .ui-accordion-header {
-    margin: -1px;
+    margin: -2px;
 }
 
 @media (max-width:720px) {
